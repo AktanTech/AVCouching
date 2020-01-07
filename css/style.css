@@ -816,6 +816,12 @@ footer .back-top i{
 }
 
 
+.construction{
+  color: white; 
+  text-align: right; 
+  font-size: 1.8rem;
+}
+
 .social a {
     color: #fff;
     margin-right: 24px;
@@ -1480,6 +1486,12 @@ footer .copyright p, footer .back-top p{
 
 footer .back-top{
     display: none;
+}
+
+.construction{
+  color: white; 
+  text-align: right; 
+  font-size: 1.7rem;
 }
 
 .social a {
