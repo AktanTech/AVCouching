@@ -357,14 +357,14 @@ header .menu:hover > span{
 
 
 .page-view .project .image{
-  width: 100%;
-  height: 100%;
+  width: 100%; /* 100% para Full*/
+  height: 60%; /* 100% para Full*/
   background-size: contain;
-  background-position: center;
+  background-position: left; /* center para Full*/
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 10%; /* 0 para Full*/
   z-index: -1;
   -webkit-filter: grayscale(100%);
   /*Safari6.0-9.0*/filter: grayscale(100%);
@@ -541,7 +541,7 @@ header .menu:hover > span{
   width: 100%;
   z-index: 100;
   padding: 45px;
-  padding-bottom: 125px !important;
+  /* padding-bottom: 125px !important; */
 }
 
 .slider-bottom .arrows .arrow{
