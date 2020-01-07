@@ -541,6 +541,7 @@ header .menu:hover > span{
   width: 100%;
   z-index: 100;
   padding: 45px;
+  padding-bottom: 125px !important;
 }
 
 .slider-bottom .arrows .arrow{
@@ -820,6 +821,7 @@ footer .back-top i{
     margin-right: 24px;
     width: 20px;
     display: inline-block;
+    font-size: 2rem;
 }
 
 .social a:hover {
@@ -1398,7 +1400,7 @@ header {
   }
 
   .slider-bottom {
-    padding: 25px;
+    padding: 25px !important;
 }
 
 .slider-bottom .social{
@@ -1481,7 +1483,7 @@ footer .back-top{
 }
 
 .social a {
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .project-info .title {

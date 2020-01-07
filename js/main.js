@@ -122,7 +122,7 @@ var Core;
             this.dom.current = $(this.dom.project[this.current]);
             this.dom.next = $(this.dom.project[this.current + 1]);
             this.dom.current.css('z-index', 30);
-            this.dom.next.css('z-index', 20);
+            this.dom.next.css('z-index', 30); /* CAMBIAR A 20 PARA QUE FUNCIONE LA ANIMACIÓN*/
         };
 
         Slider.prototype.clear = function () {
@@ -201,15 +201,15 @@ var Core;
             this.working = true;
             this.dom.next = $(this.dom.project[this.next]);
             this.dom.current.css('z-index', 30);
-            self.dom.next.css('z-index', 20);
+            self.dom.next.css('z-index', 30); /* CAMBIAR A 20 PARA QUE FUNCIONE LA ANIMACIÓN*/
             // Hide current
-            setTimeout(function(){ self.dom.current.addClass('hide'); }, 500);
+            // setTimeout(function(){ self.dom.current.addClass('hide'); }, 500); /*DESCOMENTAR PARA QUE FUNCIONE LA ANIMACIÓN */
              TweenMax.to(this.dom.current.children('.text'), 0.6, {force3D:true, opacity:0, y:'-100%', delay:0.1, ease:Power2.easeOut});
              TweenMax.to(this.dom.next.children('.text'), 0.6, {force3D:true, opacity:1, y:'-50%', delay:1.7, ease:Power2.easeOut});
             setTimeout(function () {
                 self.dom.current.css('z-index', 10);
                 self.dom.next.css('z-index', 30);
-                self.dom.current.removeClass('hide');
+                // self.dom.current.removeClass('hide'); /*DESCOMENTAR PARA QUE FUNCIONE LA ANIMACIÓN */
                 self.dom.current = self.dom.next;
                 self.current = self.next;
                 self.working = false;
