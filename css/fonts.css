@@ -1,0 +1,16 @@
+@font-face{
+    font-family: Metrish;
+    src: url(../fonts/Metrisch-Book.otf);
+}
+
+@font-face{
+    font-family: Metrish;
+    src: url(../fonts/Metrisch-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: Metrish;
+    src: url(../fonts/Metrisch-Light.otf);
+    font-weight: lighter;
+}

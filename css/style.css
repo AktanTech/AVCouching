@@ -256,6 +256,15 @@ header{
   padding: 45px;
   width: 100%;
 }
+table{
+  display: inline;
+}
+.barmenu{
+  padding-left: 2em;
+  padding-right: 2em;
+  color: #fff;
+  font-family: Metrish;
+}
 
 .page-loader{
   width: 100%;
@@ -1020,11 +1029,13 @@ textarea::placeholder, .form-inp::placeholder {
 .hero-image {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     left: 0;
-    background-size: cover;
-    background-position-x: center;
+    background-size: contain;
+    background-position-x: 55em;
     background-position-y: center;
+    background-color: #000;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -1040,18 +1051,29 @@ textarea::placeholder, .form-inp::placeholder {
 
 .inner {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
+    text-align: left;
+    padding-bottom: 2em;
+    padding-left: 8em;
+    font-family: "Metrish";
+}
+.firstName{
+  font-family: "Metrish";
+  font-weight: normal;
 }
 
 .hero-content .title {
     color: #fff;
-    font-size: 75px;
-    font-weight: 700;
+    font-size: 6em;
+    font-weight: bold;
+    letter-spacing: .25em;
 }
 
 .hero-content .category {
     color: #fff;
-    font-weight: 500;
+    font-weight: lighter;
+    letter-spacing: .2em;
+    font-size: 1.5em;
 }
 
 .down-icon {
@@ -1159,28 +1181,45 @@ svg #wheel {
   padding: 36px 0 30px 0;
 }
 
+#Quien-soy{
+  /* padding-top: 5em; */
+  width: 100%;
+  background-color: #fff;
+}
+
 .project-info .title{
-    font-size: 34px;
-    font-weight: 600;
-    color: #fff;
+    font-size: 7em;
+    font-weight: bold;
+    color: #0F4C81;
+    padding: 0;
+    margin: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
 .project-info p{
-    font-size: 16px;
+    font-size: 0.85em;
     opacity: .8;
-    color: #fff;
-    margin-top: 20px;
+    color: #000;
+    margin-top: 6em;
+    margin-left: 6rem;
+}
+
+.project-info img{
+  height: 34em;
+  margin-top: 4em;
+  margin-left: 4em;
 }
 
 .categories ul li{
-  color: #fff;
+  color: #000;
   list-style: none;
   font-size: 14px; 
   opacity: .8;
 }
 
 .categories ul li a{ 
-  color: #fff;
+  color: #000;
   font-weight: 500;
   margin-top: 15px;
   display: inline-block;
@@ -1192,15 +1231,23 @@ svg #wheel {
 }
 
 .categories ul li.client{
-  color: #fff;
+  color: #000;
   font-size: 20px; 
   margin-bottom: 10px;
   font-weight: 600;
   opacity: 1;
 }
 
+
 .categories ul li a:hover{
   color: #8571ea;
+}
+
+.categories img{
+  height: 15em;
+  vertical-align: bottom;
+  margin-top: 25em;
+  margin-left: 0;
 }
 
 /*------------------------ All Projects ------------------------*/   
@@ -1413,6 +1460,15 @@ header {
   display: flex;
 }
 
+.inner{
+  padding-left: 0;
+  text-align: center;
+}
+
+table{
+  display: none;
+}
+
 .all-link{
   float: right;
 }
@@ -1440,7 +1496,9 @@ header {
 .page-view .categorie {
     margin-left: 0px;
 }
-
+.hero-image{
+  background-position-x: center;
+}
 .hero-content .title {
     font-size: 35px;
 }
@@ -1500,10 +1558,30 @@ footer .back-top{
 }
 
 .project-info .title {
-    font-size: 24px;
-    line-height: 33px;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: 3em;
+    /* line-height: 33px; */
+    margin-top: 1em;
+    text-align: center;
 }
 
+.project-info img{
+  width:  100%;
+  margin-top: 2em;
+  margin-left: 0;
+}
+
+.categories img{
+  margin-top: 0;
+  margin-bottom: 4em;
+}
+
+.project-info p{
+  margin-top: 2em;
+  margin-left: 0;
+  font-size: 1em;
+}
 .container.top_90.box-animation{
     margin-top: 51px;
 }
