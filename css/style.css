@@ -25,6 +25,10 @@
 
 /*------------------------ 1 Body and Core Css ------------------------*/   
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   background: #141414;
@@ -304,7 +308,8 @@ header .logo{
 }
 
 header .logo img{
-  max-height: 40px;
+  max-height: 6em;
+  margin-top: -2em;
 }
 
 header .menu{
@@ -1102,13 +1107,48 @@ svg #wheel {
 
 .full-image.parallax {
     overflow: hidden;
-    max-height: 500px;
+    max-height: 50em;
 }
 
 .full-image.parallax img{
   width: 100%;
 }
 
+.contact-img{
+  background-image: url("../img/AV/26.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50em;
+}
+
+.services-container{
+  width: 100%;
+}
+
+.services-container .title{
+  font-size: 7.3em;
+  font-weight: bold;
+  color: #0F4C81;
+  padding: 0;
+  margin: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.info-services h2{
+  color: #FFF;
+}
+
+.info-services p{
+  color: #BFBFBF;
+}
+
+.services{
+  height: 10em;
+}
 
 .lightbox-gallery .image {
     margin-bottom: 30px;
@@ -1181,14 +1221,20 @@ svg #wheel {
   padding: 36px 0 30px 0;
 }
 
-#Quien-soy{
-  /* padding-top: 5em; */
+#quienSoy{
   width: 100%;
   background-color: #fff;
 }
 
+.project-info{
+  background-image: url('../img/AV/Shape-2pagina2.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60em;
+}
+
 .project-info .title{
-    font-size: 7em;
+    font-size: 7.3em;
     font-weight: bold;
     color: #0F4C81;
     padding: 0;
@@ -1209,6 +1255,10 @@ svg #wheel {
   height: 34em;
   margin-top: 4em;
   margin-left: 4em;
+}
+
+.categories{
+  padding-bottom: 5em;
 }
 
 .categories ul li{
@@ -1248,6 +1298,77 @@ svg #wheel {
   vertical-align: bottom;
   margin-top: 25em;
   margin-left: 0;
+}
+
+#service-data{
+  display: block;
+}
+
+.serv-mobile{
+  display: none;
+}
+
+#podcast{
+  width: 100%;
+  background-color: #fff;
+}
+
+.podcast-info{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.podcast-info .title{
+  font-size: 10.5em;
+  font-weight: bold;
+  color: #0F4C81;
+  padding: 0;
+  margin: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.podcast-info ol{
+  font-size: 0.85em;
+  opacity: .8;
+  color: #000;
+  margin-top: 6em;
+  margin-left: 6rem;
+}
+
+.podcast-info img{
+  height: 34em;
+  margin-top: 4em;
+  margin-left: 4em;
+}
+
+#footer-main {
+  width: 100%;
+  padding: 3em 60px;
+}
+
+.info-contact{
+  margin-top: 10em;
+}
+
+.info-contact h1{
+  font-family: "Metrish";
+  font-weight: bold;
+  color: #fff;
+  font-size: 3.5em;
+}
+
+.info-contact h3{
+  font-family: Metrish;
+  font-weight: normal;
+  color: #fff;
+}
+
+.info-contact img{
+  height: 20em;
+  margin-top: 15em;
+  margin-left: -3em;
+
 }
 
 /*------------------------ All Projects ------------------------*/   
@@ -1334,12 +1455,13 @@ svg #wheel {
 @media screen and (min-width: 1025px) {
 
   #smooth-scroll {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1;
+    overflow-x: auto;
   }
     
   .scrollbar-track {
@@ -1427,6 +1549,10 @@ header {
 
 
 @media screen and (max-width: 560px){
+
+  main{
+    overflow-x: auto;
+  }
 
   .page-view .project .text .title {
     font-size: 32px;
@@ -1516,6 +1642,18 @@ table{
   margin: 0;
 }
 
+#service-data{
+  display: none;
+}
+
+.serv-mobile{
+  display: contents;
+}
+
+.service-block{
+  margin-bottom: 4em;
+}
+
 footer {
     width: 100%;
     padding: 33px 30px 45px;
@@ -1572,6 +1710,19 @@ footer .back-top{
   margin-left: 0;
 }
 
+.services-container .title{
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+  font-size: 3em;
+  /* line-height: 33px; */
+  margin-top: 1em;
+  text-align: center;
+}
+
+.categories{
+  padding-bottom: 0.5em;
+}
+
 .categories img{
   margin-top: 0;
   margin-bottom: 4em;
@@ -1582,12 +1733,53 @@ footer .back-top{
   margin-left: 0;
   font-size: 1em;
 }
+
+.podcast-info .title {
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+  font-size: 3em;
+  /* line-height: 33px; */
+  margin-top: 1em;
+  text-align: center;
+}
+
+.podcast-info img{
+  width:  100%;
+  margin-top: 2em;
+  margin-left: 0;
+}
+
+.podcast-info ol{
+  margin-top: 3em;
+  margin-left: 0;
+}
+
 .container.top_90.box-animation{
     margin-top: 51px;
 }
 
 .full-image{
   display: none;
+}
+
+.info-contact{
+  margin-top: 2em;
+  text-align: center;
+}
+
+.info-contact h1{
+  font-size: 3em;
+}
+
+.info-contact h3{
+  font-size: 1.5em;
+}
+
+.info-contact img{
+  margin-left: 0;
+  margin-top: 22em;
+  width: 80%;
+  height: 40%;
 }
 
 .subtext.top_90.box-animation{

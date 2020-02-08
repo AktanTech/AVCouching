@@ -1,6 +1,7 @@
 "use strict";
 
 function ajaxload() {
+    scrollSection();
     pageslider();
     pagemenu();
     page_anim();
@@ -9,6 +10,7 @@ function ajaxload() {
     parallax ();
     mobiletouch();
     hasTouch();
+    
 }
 
 function mobile(){
@@ -26,52 +28,52 @@ $('main').waitForImages(function() {
 
 
 // AJAX LOAD    
-$("main").on('click','[data-type="ajax-load"]', function(e) {
-    TweenLite.to(".page-loader", .9, {css:{display:"block"}, delay:.1, easy: Quad.easeInOut });
-    TweenLite.to(".page-menu", .3, {css:{opacity:"0"}, delay:.1, easy: Quad.easeInOut });
-    $('.page-loader').addClass('in');
-      setTimeout(function() {
-        $('.page-loader').removeClass('in');
-        },1000);
+// $("main").on('click','[data-type="ajax-load"]', function(e) {
+//     TweenLite.to(".page-loader", .9, {css:{display:"block"}, delay:.1, easy: Quad.easeInOut });
+//     TweenLite.to(".page-menu", .3, {css:{opacity:"0"}, delay:.1, easy: Quad.easeInOut });
+//     $('.page-loader').addClass('in');
+//       setTimeout(function() {
+//         $('.page-loader').removeClass('in');
+//         },1000);
 
 
-    var href = $(this).attr("href");
+//     var href = $(this).attr("href");
 
-    loadHtml();
-    function loadHtml() {
-        setTimeout(function() {
-            loadContent(href);            
-            history.pushState('', 'new URL: '+href, href);        
-        },1500);
+//     loadHtml();
+//     function loadHtml() {
+//         setTimeout(function() {
+//             loadContent(href);            
+//             history.pushState('', 'new URL: '+href, href);        
+//         },1500);
 
-    }
-    e.preventDefault();
-});
+//     }
+//     e.preventDefault();
+// });
 
-window.onpopstate = function(event) {
-    location.reload();
-};
-function loadContent(url) {
-    var getData = $.get(url, function(response) {
-        var markup = $("<main>" + response + "</main>");
-        var fragment = markup.find("main").html();
-        var title = markup.find("title").html();
-        $('head title').html( title );
+// window.onpopstate = function(event) {
+//     location.reload();
+// };
+// function loadContent(url) {
+//     var getData = $.get(url, function(response) {
+//         var markup = $("<main>" + response + "</main>");
+//         var fragment = markup.find("main").html();
+//         var title = markup.find("title").html();
+//         $('head title').html( title );
 
-        $("main").html(fragment);
-        ajaxload();
-        if($('.page-view').length){
-            location.reload();
-        }
+//         $("main").html(fragment);
+//         ajaxload();
+//         if($('.page-view').length){
+//             location.reload();
+//         }
 
-      $('.page-loader').addClass('out');
-        $('.page-loader').delay(400).fadeOut('slow');
-          setTimeout(function() {
-        $('.page-loader').removeClass('out');
-        },1000);
+//       $('.page-loader').addClass('out');
+//         $('.page-loader').delay(400).fadeOut('slow');
+//           setTimeout(function() {
+//         $('.page-loader').removeClass('out');
+//         },1000);
 
-    });
-}
+//     });
+// }
 
 function pageslider() {
     $('.project .text').addClass('tamam');
@@ -355,6 +357,34 @@ var controller = new ScrollMagic.Controller();
 }); 
 }
 
+function scrollSection() {
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $(".limenu").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+            console.log(hash);
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+                console.log(hash);
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+}
+
 
 
         // LIGHTBOX
@@ -409,8 +439,6 @@ if (hasTouch()) { // remove all :hover stylesheets
 
 
 $(document).ready( function() {
-
-
 
 }); // document read end 
 
