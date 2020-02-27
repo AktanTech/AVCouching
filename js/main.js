@@ -437,6 +437,22 @@ if (hasTouch()) { // remove all :hover stylesheets
 
 
 
+$(window).ready(function(){
+    var wHeight = $(window).height();
+    console.log(wHeight)
+
+    $('.section-slide')
+    .height(wHeight)
+    .scrollie({
+        scrollOffset : -600,
+        scrollingInView : function(elem) {
+            var color = elem.data('text');
+            console.log(color)
+            $('.nav-option').css('color', color);
+        }
+    });
+});
+
 
 $(document).ready( function() {
 

@@ -270,6 +270,10 @@ table{
   font-family: Metrish;
 }
 
+.barmenu h5{
+  font-weight: 800;
+}
+
 .page-loader{
   width: 100%;
   height: 100%;
