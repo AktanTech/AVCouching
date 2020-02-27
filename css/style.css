@@ -254,7 +254,7 @@ body{
 }
 
 header{
-  position: fixed;
+  position: absolute;
   left: 0;
   z-index: 100;
   padding: 45px;
@@ -272,6 +272,7 @@ table{
 
 .barmenu h5{
   font-weight: 800;
+  color: #fff !important;
 }
 
 .page-loader{
@@ -1253,10 +1254,11 @@ svg #wheel {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 60em;
+  height: fit-content !important;
 }
 
 .project-info .title{
-    font-size: 7.3em;
+    font-size: 7em;
     font-weight: bold;
     color: #0F4C81;
     padding: 0;
@@ -1264,6 +1266,8 @@ svg #wheel {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
+
+
 
 .project-info p{
     font-size: 0.85em;
@@ -1276,7 +1280,7 @@ svg #wheel {
 .project-info img{
   height: 34em;
   margin-top: 4em;
-  margin-left: 4em;
+  margin-left: 2em;
 }
 
 .categories{
@@ -1342,6 +1346,7 @@ svg #wheel {
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 20em;
+  height: fit-content !important;
 }
 
 .podcast-info .title{
@@ -1365,7 +1370,7 @@ svg #wheel {
 .podcast-info img{
   height: 34em;
   margin-top: 4em;
-  margin-left: 4em;
+  margin-left: 2em;
 }
 
 #footer-main {
@@ -1391,9 +1396,9 @@ svg #wheel {
 }
 
 .info-contact img{
-  height: 20em;
-  margin-top: 15em;
-  margin-left: -3em;
+  height: 15em;
+  margin-top: 20em;
+  margin-left: -5em;
 
 }
 
