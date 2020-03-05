@@ -255,7 +255,7 @@ body{
 
 header{
   position: fixed;
-  background-color: #000;
+  /* background-color: #000; */
   left: 0;
   z-index: 100;
   padding: 45px;
@@ -1303,6 +1303,7 @@ svg #wheel {
     color: #000;
     margin-top: 6em;
     margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 .project-info img{
@@ -1360,6 +1361,14 @@ svg #wheel {
 
 .serv-mobile{
   display: none;
+}
+
+#carousel-mobile{
+  display: none;
+}
+
+#carousel-desk{
+  display: block;
 }
 
 #podcast{
@@ -1705,6 +1714,14 @@ table{
   display: none;
 }
 
+#carousel-desk{
+  display: none;
+}
+
+#carousel-mobile{
+  display: block;
+}
+
 .serv-mobile{
   display: contents;
 }
@@ -1799,6 +1816,7 @@ footer .back-top{
 .project-info p{
   margin-top: 2em;
   margin-left: 0;
+  margin-right: 0;
   font-size: 1em;
 }
 
