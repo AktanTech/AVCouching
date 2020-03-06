@@ -1453,7 +1453,7 @@ svg #wheel {
 }
 
 #img-alex{
-width: 100%;
+width: auto;
 }
 
 /*------------------------ All Projects ------------------------*/   
@@ -1686,6 +1686,10 @@ table{
 .all-link{
   float: right;
 }
+
+#img-alex{
+  width: 100%;
+  }
 
 .all-projects ul li a {
     padding: 12px 0;
