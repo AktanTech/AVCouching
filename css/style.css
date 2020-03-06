@@ -1449,6 +1449,11 @@ svg #wheel {
   margin-top: 20em;
   margin-left: -5em;
 
+  
+}
+
+#img-alex{
+width: 100%;
 }
 
 /*------------------------ All Projects ------------------------*/   
@@ -1602,7 +1607,10 @@ svg #wheel {
 }
 
 header {
-    padding: 35px 25px;
+    /* padding: 35px 25px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 1rem;
 }
 
 .subpage .subtext {
@@ -1802,7 +1810,8 @@ footer .back-top{
 }
 
 .project-info img{
-  width:  100%;
+  width:  80%;
+  height: auto;
   margin-top: 2em;
   margin-left: 0;
 }
@@ -1818,6 +1827,7 @@ footer .back-top{
 
 .categories{
   padding-bottom: 0.5em;
+  text-align: center;
 }
 
 .categories img{
