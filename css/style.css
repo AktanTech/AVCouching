@@ -1635,6 +1635,53 @@ header {
 
 }
 
+@media(max-width: 1100px){
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: #000;
+    background-repeat: no-repeat;
+}
+
+  .inner {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: left;
+    padding-bottom: 2em;
+    padding-left: 5em;
+    font-family: "Metrish";
+  }
+  
+  .categories{
+    display: none;
+  }
+
+  .project-info p{
+    opacity: 1;
+    background-color: white;
+    margin-left: 14em;
+    margin-right: -15em;
+
+  }
+
+  .info-contact img{
+    margin-left: -8em;
+  }
+
+  .services-row{
+    height: 675px !important;
+  }
+
+  .services-container .title{
+    margin-left: -0.5em;
+  }
+}
+
 
 @media screen and (max-width: 560px){
 
@@ -1738,6 +1785,10 @@ table{
 
 #service-data{
   display: none;
+}
+
+.categories{
+  display: block;
 }
 
 #carousel-desk{
@@ -1972,6 +2023,8 @@ footer .back-top{
 }
 
 }
+
+
 
 
 
