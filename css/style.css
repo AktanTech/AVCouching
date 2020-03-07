@@ -1677,7 +1677,8 @@ header {
 .inner{
   padding-left: 0;
   text-align: center;
-  padding-bottom: 3rem;
+  padding-top: 30rem;
+  vertical-align: text-bottom;
 }
 
 table{
