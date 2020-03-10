@@ -1682,6 +1682,354 @@ header {
   }
 }
 
+@media screen and (max-width: 770px){
+
+  main{
+    overflow-x: auto;
+  }
+
+  .page-view .project .text .title {
+    font-size: 32px;
+    line-height: 80px;
+    letter-spacing: -1px;
+  }
+
+  .page-view .project .text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    display: table;
+    text-align: left;
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+
+    .page-menu ul li a {
+      font-size: 30px;
+  }
+
+  .slider-bottom {
+    padding: 25px !important;
+}
+
+.slider-bottom .social{
+  display: flex;
+}
+
+.inner{
+  padding-left: 0;
+  text-align: center;
+  padding-top: 30rem;
+  vertical-align: text-bottom;
+}
+
+table{
+  display: none;
+}
+
+.all-link{
+  float: right;
+}
+
+#img-alex{
+  width: 100%;
+  }
+
+.all-projects ul li a {
+    padding: 12px 0;
+}
+
+.all-projects ul li .title {
+    font-size: 35px;
+}
+
+.all-projects ul{
+  padding-left: 0;
+}
+
+.all-projects ul li .number {
+    left: 0px;
+}
+
+.categorie {
+    margin-left: 30px;
+}
+
+.page-view .categorie {
+    margin-left: 0px;
+}
+.hero-image{
+  background-position-x: center;
+}
+.hero-content .title {
+    font-size: 35px;
+}
+
+.subtext {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.next-link .nav-title {
+    font-size: 25px;
+}
+
+.col-lg-12.text-left.top_60.bottom_30.box-animation{
+  margin: 0;
+}
+
+#service-data{
+  display: none;
+}
+
+.categories{
+  display: block;
+}
+
+#carousel-desk{
+  display: none;
+}
+
+#carousel-mobile{
+  display: block;
+}
+
+.serv-mobile{
+  display: contents;
+}
+
+.data-services-container{
+  margin-top: 5em;
+}
+
+.service-block{
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.services{
+  width: auto;
+}
+
+footer {
+    width: 100%;
+    padding: 33px 30px 45px;
+    border-top: 1px solid #2f2f2f;
+    margin-top: 23px;
+}
+
+footer .social{
+    padding: 0px;
+    margin: 0 auto;
+    float: none!important;
+    display: table;
+}
+
+footer .copyright{
+    float: none!important;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .copyright p, footer .back-top p{
+    margin-bottom: 12px;
+}
+
+
+footer .back-top{
+    display: none;
+}
+
+.construction{
+  color: white; 
+  text-align: right; 
+  font-size: 1.45rem;
+}
+
+.social a {
+    margin-right: 18px;
+    font-size: 1.5 !important;
+}
+
+.project-info .title {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: 3em;
+    /* line-height: 33px; */
+    margin-top: 1em;
+    text-align: center;
+}
+
+.project-info img{
+  width:  50%;
+  height: auto;
+  margin-top: 2em;
+  margin-left: 0;
+}
+
+.services-container .title{
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+  font-size: 3em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.categories{
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.categories img{
+  margin-top: 0;
+  margin-bottom: 4em;
+}
+
+.project-info p{
+  margin-top: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1em;
+}
+
+.podcast-info .title {
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+  font-size: 3em;
+  /* line-height: 33px; */
+  margin-top: 1em;
+  text-align: center;
+}
+
+.podcast-info img{
+  width:  100%;
+  margin-top: 2em;
+  margin-left: 0;
+}
+
+.podcast-info ol{
+  margin-top: 3em;
+  margin-left: 0;
+}
+
+.container.top_90.box-animation{
+    margin-top: 51px;
+}
+
+.full-image{
+  display: none;
+}
+
+.info-contact{
+  margin-top: 2em;
+  text-align: center;
+}
+
+.info-contact h1{
+  font-size: 3em;
+}
+
+.info-contact h3{
+  font-size: 1.5em;
+}
+
+.contact-row{
+  height: auto !important;
+}
+
+.info-contact img{
+  margin-left: 0;
+  margin-top: 15em;
+  width: 50%;
+  height: 50%;
+}
+
+.subtext.top_90.box-animation{
+    margin-top: 14px;
+}
+
+.page-view .project .text .see-more {
+    font-size: 15px;    
+    transform: translateX(20px);
+}
+
+
+.subpage {
+    padding: 120px 30px 0;
+}
+
+.page-title {
+    font-size: 40px;
+}
+
+.subpage .subtext {
+    font-size: 20px;
+    line-height: 33px;
+}
+
+.contact-link.top_120{
+  margin-top: 60px;
+}
+
+.contact-link br{
+  display: none;
+}
+
+.subtitle.top_90.bottom_45{
+  margin-top: 50px;
+}
+
+.subtitle{
+  font-size: 22px;
+}
+
+.services .service {
+    padding: 40px 30px;
+}
+
+
+.services-row{
+  height: auto !important;
+}
+
+.getintouch .info {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.getintouch {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.space30{
+  height: 15px;
+}
+
+.space80 {
+    height: 40px;
+}
+
+.d-n{
+  display: none;
+}
+
+.space50 {
+    height: 25px;
+}
+
+.col-lg-12.text-left.box-animation{
+  text-align: center !important;
+}
+
+}
 
 @media screen and (max-width: 560px){
 
